@@ -4,6 +4,7 @@ using BTL_CNPM.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BTL_CNPM.Migrations
 {
     [DbContext(typeof(BTL_CNPMDbContext))]
-    partial class BTL_CNPMDbContextModelSnapshot : ModelSnapshot
+    [Migration("20221018145523_Create_Table_Calendar_Event_Member_Team_TeamRole")]
+    partial class Create_Table_Calendar_Event_Member_Team_TeamRole
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
